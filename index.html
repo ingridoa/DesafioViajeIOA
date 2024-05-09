@@ -132,20 +132,22 @@
         </div>
       </section>
       <hr />
+
+       <!--seccion quienes somos-->
       <section
-        class="text-secondary pt-4 pb-5 d-none d-md-block"
+        class="text-secondary pt-4 pb-5 "
         id="quienes-somos"
       >
-        <div class="pt-5 pb-4 text-center">
+             <div class="pt-5 pb-4 text-center">
           <h2 class="text-white text-uppercase fs-4 line">¿Quienes somos?</h2>
         </div>
 
         <section class="container my-4">
           <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 d-none d-md-block">
               <img src="./assets/img/quienes-somos.jpg" alt="" class="w-100" />
             </div>
-            <div class="col-12 col-md-6 pt-5">
+            <div class="col-12 col-md-6">
               <h2 class="bg-primary text-secondary"></h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -172,11 +174,11 @@
         </section>
       </section>
 
-      <section class="container my-3" id="destacados-mg">
+      <section class="container my-3"  id="destacados-mg">
         <h2 class="line text-secondary text-center">Destacados</h2>
-        <div class="row p-3">
+        <div class="row p-3 justify-content-center">
           <!--Inicio de card1-->
-          <div class="card mb-3 col-12 col-md-6 mx-3" style="max-width: 540px">
+          <div class="card mb-3 col-12 col-md-6 mx-1" style="max-width: 540px">
             <div class="row g-0">
               <div class="col-md-4">
                 <img
@@ -210,7 +212,7 @@
           </div>
           <!--Fin de card1-->
           <!--Inicio de card2-->
-          <div class="card mb-3 col-12 col-md-6 mx-3" style="max-width: 540px">
+          <div class="card mb-3 col-12 col-md-6 mx-1" style="max-width: 540px">
             <div class="row g-0">
               <div class="col-md-4">
                 <img
@@ -244,7 +246,7 @@
           </div>
           <!--Fin de card2-->
           <!--Inicio de card3-->
-          <div class="card mb-3 col-12 col-md-6 mx-3" style="max-width: 540px">
+          <div class="card mb-3 col-12 col-md-6 mx-1" style="max-width: 540px">
             <div class="row g-0">
               <div class="col-md-4">
                 <img
@@ -278,7 +280,7 @@
           </div>
 
           <!--Inicio de card4-->
-          <div class="card mb-3 col-12 col-md-6 mx-3" style="max-width: 540px">
+          <div class="card mb-3 col-12 col-md-6 mx-1" style="max-width: 540px">
             <div class="row g-0">
               <div class="col-md-4">
                 <img
@@ -446,10 +448,55 @@
                 placeholder="escribe un mensaje "
                 aria-label="Last name"
               />
+              <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="invalidCheck"
+                  required
+                />
+              <label
+                  class="form-check-label text-secondary"
+                  for="invalidCheck"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  Acepto términos y condiciones
+                </label>
+   <!--Modal -->
+
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Terminos y condiciones</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi necessitatibus autem expedita repudiandae aliquam magnam, facilis, tempore, molestiae deleniti officiis repellat doloribus obcaecati accusamus enim sit tempora ipsum similique quisquam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores non distinctio aperiam odit! Molestias dicta dignissimos voluptate nemo totam, tempora explicabo possimus quia aliquam aliquid rerum sequi laboriosam, voluptas nobis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero porro repellat provident sapiente itaque fuga, excepturi veniam, fugit est commodi exercitationem eos id, et illo dicta minus? Perspiciatis, voluptatum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero porro repellat provident sapiente itaque fuga, excepturi veniam, fugit est commodi exercitationem eos id, et illo dicta minus? Perspiciatis, voluptatum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero porro repellat provident sapiente itaque fuga, excepturi veniam, fugit est commodi exercitationem eos id, et illo dicta minus? Perspiciatis, voluptatum!</p>
+      
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
             </div>
 
+
             <div class="col-12 my-3">
-              <button type="submit" class="btn btn-secondary my-5">
+              <button type="submit" class="btn btn-secondary my-5" id="buttonSend">
                 Enviar
               </button>
             </div>
@@ -482,6 +529,15 @@
         </section>
       </div>
     </footer>
+   
+    <!-- script de Jquery -->
+     <!-- JQuery -->
+     <script
+     src="https://code.jquery.com/jquery-3.7.1.js"
+     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+     crossorigin="anonymous"
+
+   ></script>
     <!-- script js -->
     <script src="./assets/js/index.js"></script>
   </body>

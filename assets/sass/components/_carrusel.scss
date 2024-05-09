@@ -1,0 +1,10 @@
+#carouselExampleIndicators .carousel-item img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+  @media (min-width: 768px) {
+    #carouselExampleIndicators .carousel-item img {
+      height: 300px;
+    }
+  }
